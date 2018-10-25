@@ -2,12 +2,18 @@
 
 - This repository was created for my batfish training.
 
-# How to run
+# How to use
 
 Detailed instructions are [here](batfish.md), but a short version is:
 ```
 mkdir -p data
 docker run -v $(pwd)/data:/data -p 9997:9997 -p 9996:9996 batfish/batfish
+```
+
+Then, run Jupyter-notebook as below:
+```
+cd notebooks
+jupyter-notebook --no-browser
 ```
 
 # License
@@ -18,8 +24,7 @@ docker run -v $(pwd)/data:/data -p 9997:9997 -p 9996:9996 batfish/batfish
 
 - See below:
 
----
-
+```
 **Got questions, feedback, or feature requests? Join our community on [Slack!](https://join.slack.com/t/batfish-org/shared_invite/enQtMzA0Nzg2OTAzNzQ1LTUxOTJlY2YyNTVlNGQ3MTJkOTIwZTU2YjY3YzRjZWFiYzE4ODE5ODZiNjA4NGI5NTJhZmU2ZTllOTMwZDhjMzA)**
 
 # Batfish Docker Containers
@@ -48,3 +53,4 @@ When this container starts, Jupyter will show a token required for access (e.g. 
 ## Building and pushing containers
 
 If you are a developer of Batfish, see [dev instructions](README.dev.md) on how to build images and push them to Docker Hub.
+```
