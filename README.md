@@ -1,6 +1,7 @@
 # What is this repository?
 
 - This repository was created for my batfish training.
+- Jupyter-notebook is written by Japanese.
 
 # How to use
 
