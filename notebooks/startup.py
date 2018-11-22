@@ -6,7 +6,7 @@ from IPython.display import display
 
 from pybatfish.client.commands import *
 # noinspection PyUnresolvedReferences
-from pybatfish.datamodel.flow import HeaderConstraints, PathConstraints
+from pybatfish.datamodel.flow import HeaderConstraints, PathConstraints, MatchTcpFlags, TcpFlags
 from pybatfish.question import bfq, load_questions  # noqa: F401
 from pybatfish.util import get_html
 
